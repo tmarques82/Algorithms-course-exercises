@@ -91,6 +91,6 @@ if __name__ == '__main__':
     order, sccs = dfs_loop(g_reversed, last_node)
 
     # DFS with order set in previous step
-    order, sccs = dfs_loop(g, last_node, step=2, order=order)
+    order, sccs = dfs_loop(g, last_node, order=order)
 
     print 'The five biggest SCCs for the dataset have the following size: {0}'.format(sccs)
